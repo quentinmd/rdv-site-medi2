@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Confirmation de Réservation</title>
+</head>
+<body>
+    <h1>Réservation Confirmée</h1>
+    <p>Merci, {{ name }}. Votre rendez-vous est prévu le {{ date }} à {{ time }}.</p>
+    <img src="{{ url_for('static', filename='qrcode.png') }}" alt="QR Code">
+    <a href="/">Retour</a></p>
+</body>
+</html>

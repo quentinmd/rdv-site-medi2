@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Réservation de Rendez-vous</title>
+</head>
+<body>
+    <h1>Réservez votre rendez-vous médical</h1>
+    <form action="/reserve" method="POST">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Heure:</label>
+        <input type="time" id="time" name="time" required>
+        <button type="submit">Réserver</button>
+    </form>
+    <p><a href="/login">Connexion Médecin</a></p>
+</body>
+</html>
